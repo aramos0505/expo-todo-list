@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, View, SafeAreaView, FlatList,} from 'react-native';
+import {StyleSheet, View, FlatList,} from 'react-native';
 import { Text, Input, Button, CheckBox} from '@rneui/themed';
 
 export default function App() {
@@ -66,7 +66,7 @@ export default function App() {
     );
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       
       <Text style={styles.header}>Checked: Todo List</Text>
       
@@ -89,7 +89,7 @@ export default function App() {
       renderItem={renderItem}
       keyExtractor={(item) => item.key}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
